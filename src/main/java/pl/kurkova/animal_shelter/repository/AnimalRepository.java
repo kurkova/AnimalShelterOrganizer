@@ -5,5 +5,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 import pl.kurkova.animal_shelter.domain.Animal;
 
 public interface AnimalRepository extends MongoRepository <Animal, String> {
-    Animal findBy_id(ObjectId _id);
+    Animal findById(ObjectId _id);
+
+    Animal findByName (String name);
 }
