@@ -16,9 +16,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "animals")
 public class Animal {
     @Id
-    public ObjectId _id;
-
-    public String name;
-    public String species;
-    public String breed;
+    private ObjectId _id;
+    private String name;
+    private String species;
+    private String breed;
 }
