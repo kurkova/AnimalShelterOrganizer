@@ -12,12 +12,21 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-@Setter
 @Document(collection = "animals")
 public class Animal {
     @Id
-    private ObjectId _id;
+    private String id;
     private String name;
     private String species;
     private String breed;
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", species='" + species + '\'' +
+                ", breed='" + breed + '\'' +
+                '}';
+    }
 }
