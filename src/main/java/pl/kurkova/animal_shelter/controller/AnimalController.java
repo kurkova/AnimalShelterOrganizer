@@ -14,7 +14,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @RestController
 @RequestMapping("/v1")
-public class AnimalControllerTest {
+public class AnimalController {
 
     @Autowired
     private DbService service;
@@ -41,6 +41,12 @@ public class AnimalControllerTest {
         } else {
             throw new AnimalNotFoundException();
         }
+    }
+
+    @RequestMapping(method = RequestMethod.PUT, value = "/animal/{animalId}")
+    public Animal updateAnimal (@PathVariable("id") String id, @RequestBody Animal animal){
+        animal.setId(id);
+        return service.saveAnimal(animal);
     }
 }
 
