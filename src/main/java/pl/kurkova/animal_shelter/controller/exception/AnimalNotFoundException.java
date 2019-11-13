@@ -1,4 +1,8 @@
 package pl.kurkova.animal_shelter.controller.exception;
 
-public class AnimalNotFoundException {
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.NOT_FOUND)
+public class AnimalNotFoundException extends Exception {
 }
