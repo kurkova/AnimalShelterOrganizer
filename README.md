@@ -15,3 +15,4 @@ Application uses MongoDB.
  ### Tests
 - [JUnit](https://maven.apache.org/)
 - [Maven](https://maven.apache.org)
+- [Postman](https://www.getpostman.com)
