@@ -5,7 +5,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import pl.kurkova.animal_shelter.domain.Animal;
 import pl.kurkova.animal_shelter.repository.AnimalRepository;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -16,11 +15,19 @@ public class DbService {
     @Autowired
     private AnimalRepository repository;
 
-    public Optional<Animal>  getAnimalById(final String id){
+    public Optional<Animal>  getAnimalById(String id){
         return repository.findById(id);
     }
 
     public List<Animal> getAllAnimals(){
         return repository.findAll();
+    }
+
+    public Animal saveAnimal(final Animal animal){
+        return repository.save(animal);
+    }
+
+    public void deleteAnimal(String id){
+         repository.deleteById(id);
     }
 }

@@ -1,6 +1,5 @@
 package pl.kurkova.animal_shelter.controller;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import pl.kurkova.animal_shelter.controller.exception.AnimalNotFoundException;
@@ -44,7 +43,7 @@ public class AnimalController {
     }
 
     @RequestMapping(method = RequestMethod.PUT, value = "/animal/{animalId}")
-    public Animal updateAnimal (@PathVariable("id") String id, @RequestBody Animal animal){
+    public Animal updateAnimal (@PathVariable("animalId") String id, @RequestBody Animal animal){
         animal.setId(id);
         return service.saveAnimal(animal);
     }
