@@ -13,8 +13,4 @@ script:
 - oraclejdk8
 # would just use default install/script but the ./mvnw script errors on travis
 # obviously this only works for maven builds right now...
-install:
-- mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-script:
-- mvn test
->>>>>>> 6798b6dc61e3b0edccadb549306d400ef9945d47
+
