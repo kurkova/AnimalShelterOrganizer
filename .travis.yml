@@ -3,12 +3,10 @@ dist: trusty
 jdk:
 <<<<<<< HEAD
   - oraclejdk8
-# would just use default install/script but the ./mvnw script errors on travis
-# obviously this only works for maven builds right now...
+git
 script:
   - mvn test -{}
 =======
 - oraclejdk8
-# would just use default install/script but the ./mvnw script errors on travis
-# obviously this only works for maven builds right now...
+
 
