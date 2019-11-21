@@ -1,4 +1,4 @@
-# AnimalShelterOrganizer  [![Build Status](https://travis-ci.org/kurkova/AnimalShelterOrganizer.svg?branch=master)](https://travis-ci.org/kurkova/AnimalShelterOrganizer)
+# AnimalShelterOrganizer  [![Build Status](https://travis-ci.org/kurkova/animal-shelter-organizer.svg?branch=master)]https://travis-ci.org/kurkova/animal-shelter-organizer)
 
 This application could be use in animal shelter organisation as a tool to do listing animals in shelter. 
 
