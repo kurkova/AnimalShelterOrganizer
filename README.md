@@ -4,6 +4,8 @@ This application could be use in animal shelter organisation as a tool to do lis
 
 Application uses MongoDB. 
 
+The main goal of this application was to learn how works MongoDb database. 
+
 ## Technologies & Frameworks
 
 ### Backend
