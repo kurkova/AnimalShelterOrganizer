@@ -2,7 +2,7 @@
 
 This application could be use in animal shelter organisation as a tool to do listing animals in shelter. 
 
-Application uses MongoDB. 
+Application uses MongoDB and Docker. 
 
 The main goal of this application was to learn how works MongoDb database. 
 
