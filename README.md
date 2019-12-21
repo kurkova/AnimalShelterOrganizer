@@ -19,4 +19,4 @@ The main goal of this application was to learn how works MongoDb database.
  ### Tests
 - [JUnit](https://maven.apache.org/)
 - [Maven](https://maven.apache.org)
-- [Postman](https://www.getpostman.com)
+
