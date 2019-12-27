@@ -14,6 +14,7 @@ The main goal of this application was to learn how works MongoDb database.
 - [Lombok](https://projectlombok.org/)
 - [Maven](https://maven.apache.org)
 - [Mockito](http://site.mockito.org/)
+- [Swagger](https://swagger.io/)
 - [Docker](https://www.docker.com)
  
  ### Tests
